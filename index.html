@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shopping Cart</title>
+
+    <link rel="stylesheet" type="text/css" href="CSS/header.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/grid.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/clearbtn.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>Shopping Cart</h1>
+      <p>By Rodrigo Bilbao</p>
+      <div class="row">
+        <form id="form">
+          <label for="pname">Product Name:</label>
+          <input type="text" id="pname" name="pname" /><br /><br />
+          <label for="pprice">Product Price:</label>
+          <input type="number" id="pprice" name="pprice" /><br /><br />
+          <input type="submit" value="Submit" />
+          <p id="log"></p>
+        </form>
+
+        <div style="display: inline-flex">
+          <p style="padding-right: 5px; font-weight: bold">Total:</p>
+          <p id="total">0</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="shopListGrid">
+      <div class="shopList" id="shopList">
+        <div class="row" style="padding-bottom: 7px">
+          <div class="column" style="font-weight: bold">Name</div>
+          <div class="column" style="font-weight: bold">Price</div>
+          <div class="column" style="font-weight: bold">Delete</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="clearCart">
+      <button id="clearCart">Clear Cart</button>
+    </div>
+  </body>
+
+  <script src="JS/submitForm.js"></script>
+  <script src="JS/product.js"></script>
+  <script src="JS/globals.js"></script>
+  <script src="JS/clearCart.js"></script>
+</html>
